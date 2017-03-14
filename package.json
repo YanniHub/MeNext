@@ -1,0 +1,29 @@
+{
+  "name": "MeNext",
+  "version": "0.2",
+  "description": "A Slack bot to queue users",
+  "main": "bot.js",
+  "dependencies": {
+    "botkit": "^0.4",    
+    "dashbot": "0.7.4",
+    "wordfilter": "^0.2.6"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YanniHub/MeNext.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YanniHub/MeNext/issues"
+  },
+  "homepage": "https://github.com/YanniHub/MeNext",
+  "keywords": [
+    "bots",
+    "chatbots",
+    "slack",
+    "queue"
+  ],
+  "author": "yanni@papaioannou.co.uk",
+  "license": "MIT"
+}
