@@ -11,6 +11,7 @@ module.exports = function (controller) {
 
     );
 
+    /** 
 	// Bring up when SEMRush is mentioned
     controller.hears(
 
@@ -21,7 +22,19 @@ module.exports = function (controller) {
       semrush
 
     );
-	
+*/  	
+	// Bring up when SEMRush is mentioned
+
+	controller.hears(
+		['on semrush', 'on semrush (.*)', '(.*) on semrush (.*)','using semrush', 'using semrush (.*)', '(.*) using semrush (.*)','to semrush', 'to semrush (.*)', '(.*) to semrush (.*)'],
+['direct_message','direct_mention','mention'],
+
+function(bot,message) {
+
+  bot.reply(message,''Hello '+ '<@'+ message.user +'>! Are you looking to get in line for SEMRush? Try asking me for help!');
+
+});
+
     // Show users in the queue
     controller.hears(
       
@@ -82,6 +95,7 @@ module.exports = function (controller) {
 
     }
 
+/**
     function semrush(bot, message) {
        
       const semrush = 'Hello '+ '<@'+ message.user +'>! Are you looking to get in line for SEMRush? These are the commands you can use: ' +'\n' + 
@@ -92,10 +106,10 @@ module.exports = function (controller) {
             '> `help` : Show the commands you can use with MeNext\n' + 
             'Name me with any of this commands. Ex: Hey `@MeNext` show me the `queue`.'; 
 
-       bot.reply(message, help);
+       bot.reply(message, semrush);
 
     }
-
+*/  
     function queue(bot, message) {
 
         // load user from storage...
