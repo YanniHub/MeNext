@@ -16,9 +16,6 @@ MeNext expose a API with main functionalities of a queue. You only need to menti
 * `clean` >   Delete all users in the queue 
 * `help`  >   Show the MeNextAPI avalaible 
 
-## Example
-
-
 
 ## Install
 
